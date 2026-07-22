@@ -323,3 +323,107 @@ textarea {
 .schedule-table tr:nth-child(even) {
     background: var(--bg-secondary);
 }
+
+/*ACCORDÉON FAQ*/
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.faq-input {
+    display: none;
+}
+
+.faq-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    background: var(--bg-card);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease-out, padding 0.35s ease;
+    background: var(--bg-secondary);
+    padding: 0 1.2rem;
+}
+
+.faq-input:checked~.faq-content {
+    max-height: 200px;
+    padding: 1.2rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1200px) {
+    .speaker-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #burger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-primary);
+        flex-direction: column;
+        padding: 2rem;
+        display: none;
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .speaker-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+}
