@@ -12,6 +12,84 @@
 </head>
 
 <body>
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AfriConnect 2026</a>
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="programme.html" class="nav-link">Programme</a></li>
+                <li><a href="intervenants.html" class="nav-link">Intervenants</a></li>
+                <li><a href="contact.html" class="nav-link">Inscription</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Basculer le mode sombre"><i class="bi bi-moon-fill"></i></button>
+                <button id="burger-menu" aria-label="Menu mobile"><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Le Sommet Tech Panafricain</h1>
+                <p>12 - 14 Novembre 2026 | Dakar, Sénégal</p>
+
+                <div class="countdown" id="countdown">
+                    <div class="time-box"><span id="days">00</span>Jours</div>
+                    <div class="time-box"><span id="hours">00</span>Heures</div>
+                    <div class="time-box"><span id="minutes">00</span>Min</div>
+                    <div class="time-box"><span id="seconds">00</span>Sec</div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="contact.html" class="btn btn-primary">Réserver mon Pass</a>
+                    <a href="programme.html" class="btn btn-secondary">Voir le Programme</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <p>Participants</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="48">0</div>
+                    <p>Intervenants</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <p>Jours de Conférence</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="12">0</div>
+                    <p>Pays représentés</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>AfriConnect Summit</h3>
+                <p>Le point de rencontre de la tech africaine en 2026.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <a href="programme.html">Programme</a><br>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <i class="bi bi-linkedin"></i> <i class="bi bi-twitter-x"></i>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <p>&copy; <span class="current-year"></span> AfriConnect Summit.</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

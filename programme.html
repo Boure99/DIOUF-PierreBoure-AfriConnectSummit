@@ -13,6 +13,229 @@
 
 <body>
 
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AfriConnect 2026</a>
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="programme.html" class="nav-link active">Programme</a></li>
+                <li><a href="intervenants.html" class="nav-link">Intervenants</a></li>
+                <li><a href="contact.html" class="nav-link">Inscription</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème"><i class="bi bi-moon-fill"></i></button>
+                <button id="burger-menu" aria-label="Menu mobile"><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 7rem;">
+
+        <section class="container">
+            <nav aria-label="Fil d'Ariane" style="margin-bottom: 1rem; color: var(--text-secondary);">
+                <a href="index.html">Accueil</a> &gt; <span>Programme</span>
+            </nav>
+            <h1>Programme de la Conférence</h1>
+            <p style="color: var(--text-secondary);">Explorez les 3 jours d'échanges, de keynotes et de workshops.</p>
+
+            <div class="tabs-container">
+                <button class="tab-btn active" data-target="day1">Jour 1 · 12 Nov</button>
+                <button class="tab-btn" data-target="day2">Jour 2 · 13 Nov</button>
+                <button class="tab-btn" data-target="day3">Jour 3 · 14 Nov</button>
+            </div>
+
+            <div id="day1" class="tab-content">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td><strong>Keynote d'ouverture : L'IA en Afrique</strong></td>
+                            <td>Amina Diop</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                        <tr>
+                            <td>10:15 - 11:30</td>
+                            <td>Fintech & Inclusion Financière</td>
+                            <td>Kwame Mensah</td>
+                            <td>Salle Dakar</td>
+                        </tr>
+                        <tr>
+                            <td>11:45 - 13:00</td>
+                            <td>Infrastructures Cloud & Souveraineté</td>
+                            <td>Fatou Sow</td>
+                            <td>Salle Abidjan</td>
+                        </tr>
+                        <tr>
+                            <td>14:30 - 16:00</td>
+                            <td>Atelier : Développement Mobile Cross-Platform</td>
+                            <td>Samuel Osei</td>
+                            <td>Lab Tech</td>
+                        </tr>
+                        <tr>
+                            <td>16:15 - 17:30</td>
+                            <td>Table Ronde : Financement des Startups</td>
+                            <td>Panel d'investisseurs</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="day2" class="tab-content" style="display: none;">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:15</td>
+                            <td><strong>Cybersécurité & Protection des Données</strong></td>
+                            <td>Youssef Benali</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 12:00</td>
+                            <td>Green Tech & Énergies Renouvelables</td>
+                            <td>Nia Kamau</td>
+                            <td>Salle Nairobi</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 - 15:00</td>
+                            <td>UI/UX Design pour les marchés émergents</td>
+                            <td>Kofi Addo</td>
+                            <td>Lab Design</td>
+                        </tr>
+                        <tr>
+                            <td>15:15 - 16:30</td>
+                            <td>Data Science appliquée à la santé</td>
+                            <td>Dr. Mariam Traoré</td>
+                            <td>Salle Dakar</td>
+                        </tr>
+                        <tr>
+                            <td>16:45 - 18:00</td>
+                            <td>Pitch Session : Top 10 Startups 2026</td>
+                            <td>Finalistes Tech</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="day3" class="tab-content" style="display: none;">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:30 - 11:00</td>
+                            <td><strong>Web3 & Blockchain en Afrique</strong></td>
+                            <td>Chidi Okeke</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                        <tr>
+                            <td>11:15 - 12:30</td>
+                            <td>Formation & Femmes dans la Tech</td>
+                            <td>Awa Ndiaye</td>
+                            <td>Salle Abidjan</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>Atelier : Deployer son app sur le Edge</td>
+                            <td>Jean-Luc Koffi</td>
+                            <td>Lab Tech</td>
+                        </tr>
+                        <tr>
+                            <td>15:45 - 17:00</td>
+                            <td>Networking & Opportunités de recrutement</td>
+                            <td>Tous les sponsors</td>
+                            <td>Hall Principal</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 18:00</td>
+                            <td><strong>Cérémonie de Clôture & Awards</strong></td>
+                            <td>Comité d'organisation</td>
+                            <td>Amphi Panafricain</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 4rem; margin-bottom: 2rem;">Les Thématiques Phares</h2>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                <div class="stat-card" style="text-align: left;">
+                    <i class="bi bi-cpu" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <h3 style="margin: 0.5rem 0;">IA & Automation</h3>
+                    <p style="color: var(--text-secondary);">LLMs, IA générative et automatisation adaptées aux enjeux
+                        du continent.
+                    </p>
+                </div>
+                <div class="stat-card" style="text-align: left;">
+                    <i class="bi bi-wallet2" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <h3 style="margin: 0.5rem 0;">Fintech & Business</h3>
+                    <p style="color: var(--text-secondary);">Paiements mobiles, inclusion financière et levées de fonds.
+                    </p>
+                </div>
+                <div class="stat-card" style="text-align: left;">
+                    <i class="bi bi-palette" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <h3 style="margin: 0.5rem 0;">Design & UX</h3>
+                    <p style="color: var(--text-secondary);">Concevoir des interfaces accessibles, légères et centrées
+                        utilisateur.
+                    </p>
+                </div>
+                <div class="stat-card" style="text-align: left;">
+                    <i class="bi bi-database" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <h3 style="margin: 0.5rem 0;">Data & Cloud</h3>
+                    <p style="color: var(--text-secondary);">Big Data, souveraineté des données et infrastructures
+                        cloud.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>AfriConnect Summit</h3>
+                <p>Le rendez-vous annuel de la tech panafricaine.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <a href="index.html">Accueil</a><br>
+                <a href="intervenants.html">Intervenants</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>contact@africonnect2026.africa</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <p>&copy; <span class="current-year"></span> AfriConnect Summit.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up"></i></button>
+
     <script src="js/main.js"></script>
 </body>
 

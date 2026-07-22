@@ -13,6 +13,168 @@
 
 <body>
 
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AfriConnect 2026</a>
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="programme.html" class="nav-link">Programme</a></li>
+                <li><a href="intervenants.html" class="nav-link active">Intervenants</a></li>
+                <li><a href="contact.html" class="nav-link">Inscription</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème"><i class="bi bi-moon-fill"></i></button>
+                <button id="burger-menu" aria-label="Menu mobile"><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 7rem;">
+        <section class="container">
+            <nav aria-label="Fil d'Ariane" style="margin-bottom: 1rem; color: var(--text-secondary);">
+                <a href="index.html">Accueil</a> &gt; <span>Intervenants</span>
+            </nav>
+            <h1>Nos Intervenants 2026</h1>
+            <p style="color: var(--text-secondary);">Découvrez les leaders, experts et pionniers qui prennent la parole
+                cette année.
+            </p>
+
+            <div class="tabs-container" style="flex-wrap: wrap; margin-top: 2rem;">
+                <button class="filter-btn tab-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn tab-btn" data-filter="tech">IA & Tech</button>
+                <button class="filter-btn tab-btn" data-filter="business">Business</button>
+                <button class="filter-btn tab-btn" data-filter="design">Design</button>
+                <button class="filter-btn tab-btn" data-filter="data">Data</button>
+            </div>
+
+            <div class="speaker-grid" style="margin-bottom: 4rem;">
+
+                <article class="speaker-card" data-category="tech">
+                    <img src=""
+                        alt="Photo de Amina Diop" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Amina Diop</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Spécialiste IA · Sénégal</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Fondatrice de
+                            TechSénégal & chercheuse en traitement automatique des langues africaines.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="business">
+                    <img src=""
+                        alt="Photo de Kwame Mensah" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Kwame Mensah</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Fondateur Fintech · Ghana</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Pionnier des
+                            paiements mobiles transfrontaliers en Afrique de l'Ouest.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="tech">
+                    <img src=""
+                        alt="Photo de Fatou Sow" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Fatou Sow</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Architecte Cloud · Côte d'Ivoire</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Expert en
+                            infrastructures distributed et souveraineté numérique.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="tech">
+                    <img src=""
+                        alt="Photo de Youssef Benali" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Youssef Benali</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Expert Cyber· Maroc</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Conseiller en
+                            sécurité des systèmes d'information pour grands groupes.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="business">
+                    <img src=""
+                        alt="Photo de Nia Kamau" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Nia Kamau</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Investisseuse CleanTech · Kenya</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Managing Partner
+                            chez Africa Green Fund.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="design">
+                    <img src=""
+                        alt="Photo de Kofi Addo" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Kofi Addo</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Lead Product Designer · Nigeria</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Spécialiste
+                            Design Systems et UX inclusive pour mobiles à faible bande passante.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="data">
+                    <img src=""
+                        alt="Photo de Dr. Mariam Traoré" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Dr. Mariam Traoré</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Data Scientist · Mali</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Spécialisée dans
+                            l'analyse prédictive appliquée aux épidémies.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="tech">
+                    <img src=""
+                        alt="Photo de Samuel Osei" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Samuel Osei</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Développeur Mobile · Cameroun</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Auteur et
+                            contributeur majeur sur des projets Flutter open-source.</p>
+                    </div>
+                </article>
+
+                <article class="speaker-card" data-category="data">
+                    <img src=""
+                        alt="Photo de Chidi Okeke" class="speaker-img">
+                    <div class="speaker-info">
+                        <h3>Chidi Okeke</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Ingénieur Blockchain · Rwanda</p>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Consultant en
+                            contrats intelligents et traçabilité agricole.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>AfriConnect Summit</h3>
+                <p>Inspiration, Réseautage, Innovation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <a href="index.html">Accueil</a><br>
+                <a href="programme.html">Programme</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>speakers@africonnect2026.africa</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <p>&copy; <span class="current-year"></span> AfriConnect Summit.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up"></i></button>
+
     <script src="js/main.js"></script>
 </body>
 
