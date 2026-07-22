@@ -50,6 +50,7 @@
                 <div style="margin-bottom: 1rem;">
                     <label for="country">Pays Africain *</label>
                     <select id="country" required style="width: 100%; padding: 0.8rem;">
+                        <option value="" disabled selected>Choisissez un pays...</option>
                         <option value="Sénégal">Sénégal</option>
                         <option value="Côte d'Ivoire">Côte d'Ivoire</option>
                         <option value="Cameroun">Cameroun</option>
@@ -75,9 +76,8 @@
             </form>
 
             <div style="flex: 1; min-width: 300px;">
-                <h3>Lieu de la conférence</h3>
+                <h2>Lieu de la conférence</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345!2d-17.444!3d14.692!"
-                    width="100%" height="300" 
                     style="border:0; border-radius: 12px;" 
                     allowfullscreen=""
                     loading="lazy">
