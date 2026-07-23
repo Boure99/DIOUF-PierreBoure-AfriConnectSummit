@@ -97,3 +97,111 @@ function initAnimatedCounters() {
 
     counters.forEach(counter => observer.observe(counter));
 }
+
+/*ONGLETS PROGRAMME */
+function initProgrammeTabs() {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.style.display = "none");
+
+            tab.classList.add("active");
+            document.getElementById(tab.getAttribute("data-target")).style.display = "block";
+        });
+    });
+}
+
+/*FILTRAGE INTERVENANTS */
+function initSpeakerFilter() {
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".speaker-card");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+
+            cards.forEach(card => {
+                if (filter === "all" || card.getAttribute("data-category") === filter) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+}
+
+/*VALIDATION DE FORMULAIRE */
+function initFormValidation() {
+    const form = document.getElementById("registration-form");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let valid = true;
+
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const msg = document.getElementById("message");
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email.value)) {
+            showError(email, "Email invalide");
+            valid = false;
+        } else showSuccess(email);
+
+        if (phone.value.length < 8) {
+            showError(phone, "Minimum 8 chiffres requis");
+            valid = false;
+        } else showSuccess(phone);
+
+        if (msg.value.length < 20) {
+            showError(msg, "Minimum 20 caractères requis");
+            valid = false;
+        } else showSuccess(msg);
+
+        if (valid) {
+            document.getElementById("form-success").style.display = "block";
+            form.reset();
+        }
+    });
+}
+
+function showError(input, message) {
+    input.style.borderColor = "red";
+    const errSpan = input.nextElementSibling;
+    if (errSpan && errSpan.classList.contains("error-msg")) errSpan.innerText = message;
+}
+
+function showSuccess(input) {
+    input.style.borderColor = "green";
+    const errSpan = input.nextElementSibling;
+    if (errSpan && errSpan.classList.contains("error-msg")) errSpan.innerText = "";
+}
+/*DIVERS Back-to-top & Scroll Observer*/
+function initBackToTop() {
+    const btn = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+        btn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+function initCurrentYear() {
+    document.querySelectorAll(".current-year").forEach(el => el.innerText = new Date().getFullYear());
+}
+
+function initScrollAnimations() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) e.target.classList.add("fade-in-visible");
+        });
+    });
+    document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
+}
